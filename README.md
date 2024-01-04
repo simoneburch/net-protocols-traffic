@@ -110,4 +110,4 @@ In Wireshark, filter for DNS traffic. Use "nslookup" in your Windows 10 command 
 In Wireshark, filter for RDP (tcp.port == 3389) traffic. Observe how there seems to be non-stop spam for RDP and realize it's a result of our current remote connection!
 </p>
 <br />
-<p>Wireshark is a useful tool for network troubleshooting and analysis.</p>
+<p>Wireshark is a useful tool for network troubleshooting and analysis as this quick guide has demonstrated.</p>
