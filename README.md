@@ -43,7 +43,7 @@ This demo uses Virtual Machines deployed on Azure. You need to already have an A
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Connect to your Windows VM using Remote Desktop and install Wireshark from within it. Open Wireshark and filter for ICMP traffic only. 
+Connect to your Windows VM using Remote Desktop and install Wireshark from within it. Open Wireshark and filter for ICMP traffic only to capture that ping activity we'll generate next.
 </p>
 <br />
 
@@ -51,7 +51,39 @@ Connect to your Windows VM using Remote Desktop and install Wireshark from withi
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Filter for SSH traffic only back in Wireshark. From the Windows VM remote into, or "SSH into" the Ubuntu VM using its private IP address. You'll need to use the User and Password in the Linux SSH connection. Observe the SSH traffic back in Wireshark as SSH is being utilized. (You can type "exit" and then "Enter" to exit the SSH connection).
+Retrieve the IP address of the Ubuntu VM and ping it from within the Windows VM. We can observe the ping requests and the replies in Wireshark.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Open the Command Line from the Windows VM and ping a public website to demonstrate the ping replies and requests in Wireshark. Observe this successful network communication.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Now initiate a perpetual ping from the Windows VM to the Ubuntu VM. Go to the Network Security Group for the Ubuntu VM and disable the inbound ICMP traffic. We'll observe the ICMP behavior in Wireshark as well as the Command Line ping activity in the Windows VM.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Now enable the ICMP traffic in the Ubuntu VM's Network Security Group and we can observe how the activity begins again in Wireshark and the Command Line as well. You can stop the ping activity when you're finished.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Let's observe the activity of other network protocols. Filter for SSH traffic only back in Wireshark. From the Windows VM remote into, or "SSH into" the Ubuntu VM using its private IP address. You'll need to use the User and Password in the Linux SSH connection. Observe the SSH traffic back in Wireshark as SSH is being utilized. (You can type "exit" and then "Enter" to exit the SSH connection).
 </p>
 <br />
 
