@@ -50,7 +50,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Filter for SSH traffic only back in Wireshark. From the Windows VM remote into, or "SSH into" the Ubuntu VM using its private IP address. You'll need to use the User and Password in the Linux SSH connection. Observe the SSH traffic back in Wireshark as SSH is being utilized. (You can type "exit" and then "Enter" to exit the SSH connection).
 </p>
 <br />
 
@@ -58,7 +58,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Filter for DHCP traffic in Wireshark. From your Windows 10 VM, issue your VM a new IP address from the command line using "ipconfig /renew".
+Filter for DHCP traffic in Wireshark. From your Windows 10 VM, issue your VM a new IP address from the command line using "ipconfig /renew". You'll be able to observe the DHCP traffic that appears in Wireshark. The DHCP server is being accessed for that renewal IP address request.
 </p>
 <br />
 
@@ -66,7 +66,7 @@ Filter for DHCP traffic in Wireshark. From your Windows 10 VM, issue your VM a n
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In Wireshark, filter for DNS traffic. Use "nslookup" in your Windows 10 command line to see what google.com and disney.com's IP addresses are. Also, observe the DNS traffic in Wireshark.
+In Wireshark, filter for DNS traffic. Use "nslookup" in your Windows 10 command line to see what google.com and disney.com's IP addresses are. Also, observe the DNS traffic in Wireshark as the access to the DNS server is seen while it translates those domain names into IP addresses. 
 </p>
 <br />
 
