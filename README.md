@@ -110,4 +110,5 @@ In Wireshark, filter for DNS traffic. Use "nslookup" in your Windows 10 command 
 In Wireshark, filter for RDP (tcp.port == 3389) traffic. Observe how there seems to be non-stop spamming for RDP traffic and realize it's a result of our current, live remote connection! 
 </p>
 <br />
+<p>Be sure to close your remote connection and delete your Resource Groups when you're finished!</p>
 <p>Thanks for stopping by :)</p>
