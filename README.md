@@ -24,6 +24,8 @@ Wireshark analyzes and filters network protocols. We'll use it with command-line
 
 <h2>High-Level Steps</h2>
 
+This demo uses Virtual Machines deployed on Azure. You need to already have an Azure subscription to make these resources and follow along using Wireshark.
+
 - Step 1: Create your Azure Resources and Install Wireshark
 - Step 2: Ping your Ubuntu VM from your Windows VM (ICMP traffic)
 - Step 3: Observe SSH, DHCP, DNS, and RDP Traffic
@@ -33,8 +35,7 @@ Wireshark analyzes and filters network protocols. We'll use it with command-line
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<p>Create a Resource Group in the Azure portal. Within that resource group create a Windows 10 VM and then a Linux (Ubuntu) VM. When creating the Linux VM make sure it is in the same Resource Group as the Windows VM and that they also share the same vnet. The 'Network Watcher' Resource Group will be automatically created and can observe your virtual network from there.   
 </p>
 <br />
 
@@ -42,7 +43,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Connect to your Windows VM using Remote Desktop and install Wireshark from within it. Open Wireshark and filter for ICMP traffic only. 
 </p>
 <br />
 
