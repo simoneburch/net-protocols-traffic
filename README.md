@@ -35,7 +35,7 @@ This demo uses Virtual Machines deployed on Azure. You need to already have an A
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<p>Create a Resource Group in the Azure portal. Within that resource group create a Windows 10 VM and then a Linux (Ubuntu) VM. When creating the Linux VM make sure it is in the same Resource Group as the Windows VM and that they also share the same vnet. The 'Network Watcher' Resource Group will be automatically created and can observe your virtual network from there.   
+<p>Create a Resource Group in the Azure portal. Within that resource group create a Windows 10 VM and then a Linux (Ubuntu) VM. When creating the Linux VM make sure it is in the same Resource Group as the Windows VM and that they also share the same vnet. The "Network Watcher" Resource Group will be automatically created and can observe your virtual network from there.   
 </p>
 <br />
 
