@@ -35,7 +35,7 @@ This demo uses Virtual Machines deployed on Azure. You need to already have an A
 <p align="center">
 <img src="https://github.com/simoneburch/net-protocols-traffic/assets/152559137/574576c7-3885-4d52-9fcf-a3dbf97b3bd0" alt="Resource examples"/>
 </p>
-<p>Create a Resource Group in the Azure portal. Within that resource group create a Windows 10 VM and then a Linux (Ubuntu) VM. When creating the Linux VM make sure it is in the same Resource Group as the Windows VM and that they also share the same vnet. The "Network Watcher" Resource Group will be automatically created and you can automate packet capture from there. We'll use the Wireshark packet analyzer in the following examples. 
+<p>Create a Resource Group in the Azure portal. Within that resource group create a Windows 10 VM and then a Linux (Ubuntu) VM. When creating the Linux VM make sure it is in the same Resource Group as the Windows VM and that they also share the same vnet (The "Network Watcher" Resource Group will be automatically created). We'll use the Wireshark packet analyzer in the following examples. 
 </p>
 <br />
 
