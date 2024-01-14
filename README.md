@@ -35,7 +35,7 @@ This demo uses Virtual Machines deployed on Azure. You need to already have an A
 <p align="center">
 <img src="https://github.com/simoneburch/net-protocols-traffic/assets/152559137/574576c7-3885-4d52-9fcf-a3dbf97b3bd0" alt="Resource examples"/>
 </p>
-<p>Create a Resource Group in the Azure portal. Within that resource group create a Windows 10 VM and then a Linux (Ubuntu) VM. When creating the Linux VM make sure it is in the same Resource Group as the Windows VM and that they also share the same vnet (The "Network Watcher" Resource Group will be automatically created). We'll use the Wireshark packet analyzer in the following examples. 
+<p>Create a Resource Group in the Azure portal. Within that resource group create a Windows 10 VM and then a Linux (Ubuntu) VM. When creating the Linux VM make sure it is in the same Resource Group as the Windows VM (The "Network Watcher" Resource Group will be automatically created) and that they also share the same virtual network. We'll use the Wireshark packet analyzer in the following examples. 
 </p>
 <br />
 
@@ -67,7 +67,7 @@ Ping a public website, like google.com from the Windows VM to demonstrate those 
 <img src="https://github.com/simoneburch/net-protocols-traffic/assets/152559137/b39ed4f3-80d5-4990-b65d-e5dc23def96d" height="80%" width="80%" alt="ICMP traffic blocked"/>
 </p>
 <p>
-Now initiate a perpetual ping (ping 10.0.0.5 -t) from the Windows VM to the Ubuntu VM. Go to the Network Security Group for the Ubuntu VM and disable the inbound ICMP traffic. We'll observe the ICMP behavior in Wireshark as well as the Command Line ping activity: the ICMP traffic is now being blocked by the Ubuntu VM's firewall (NSG).
+Now initiate a perpetual ping (ping 10.0.0.5 -t) from the Windows VM to the Ubuntu VM. Go to the Network Security Group for the Ubuntu VM and create an inbound security rule to deny ICMP traffic. We'll observe the ICMP behavior in Wireshark as well as the Command Line ping activity: the ICMP traffic is now being blocked by the Ubuntu VM's firewall (NSG).
 </p>
 <br />
 
