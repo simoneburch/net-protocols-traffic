@@ -107,7 +107,7 @@ In Wireshark, filter for DNS traffic. Use "nslookup" in your Windows 10 command 
 <img src="https://github.com/simoneburch/net-protocols-traffic/assets/152559137/469e5705-911a-4efe-8b41-243a13d6a6c0" height="80%" width="80%" alt="RDP traffic"/>
 </p>
 <p>
-In Wireshark, filter for RDP (tcp.port == 3389) traffic. Observe how there seems to be non-stop spamming for RDP traffic and realize it's a result of our current, live remote connection! 
+In Wireshark, filter for RDP (tcp.port == 3389) traffic. Observe how there seems to be a non-stop stream of RDP traffic coming through and realize it's a result of our current, live remote connection! 
 </p>
 <br />
 <p>Be sure to close your remote connection and delete your Resource Groups when you're finished!</p>
