@@ -3,6 +3,7 @@
 </p>
 
 <h1>Observe and Filter Network Traffic between Azure Virtual Machines</h1>
+
 Wireshark analyzes and filters network protocols. We'll use it with command-line tools and network security groups to inspect traffic during networking activities between two virtual machines.<br />
 
 <!--<h2>Video Demonstration</h2>
@@ -24,7 +25,7 @@ Wireshark analyzes and filters network protocols. We'll use it with command-line
 
 <h2>High-Level Steps</h2>
 
-This demo uses Virtual Machines deployed on Azure. You need to already have an Azure subscription to make these resources and follow along using Wireshark.
+*This demo uses Virtual Machines deployed on Azure. You need to already have an Azure subscription to make these resources and follow along using Wireshark.*
 
 - Step 1: Create your Azure Resources and Install Wireshark
 - Step 2: Ping your Ubuntu VM from your Windows VM (ICMP traffic)
