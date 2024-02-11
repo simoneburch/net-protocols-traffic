@@ -10,7 +10,7 @@ Wireshark analyzes and filters network protocols. We'll use it with command-line
 
 - ### [YouTube: How to Use Wireshark to Filter for Various Networking Protocols](https://www.youtube.com) -->
 
-<h2>Environments and Technologies Used</h2>
+<h2>Environments, Technologies, and Tools Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
@@ -23,15 +23,15 @@ Wireshark analyzes and filters network protocols. We'll use it with command-line
 - Ubuntu Server
 - Windows 10 (21H2)
 
-<h2>High-Level Steps</h2>
+<h2>Objectives and Steps</h2>
 
-*This demo uses Virtual Machines deployed on Azure. You need to already have an Azure subscription to make these resources and follow along using Wireshark.*
+*This demo uses Virtual Machines deployed on Azure. You need to already have an Azure subscription to make these resources and follow along using the Wireshark tool.*
 
-- Step 1: Create your Azure Resources and Install Wireshark
-- Step 2: Ping your Ubuntu VM from your Windows VM (ICMP traffic)
-- Step 3: Observe SSH, DHCP, DNS, and RDP Traffic
+- **Step 1:** Create your Azure Resources and Install Wireshark
+- **Step 2:** Ping your Ubuntu VM from your Windows VM (ICMP traffic)
+- **Step 3:** Observe SSH, DHCP, DNS, and RDP Traffic
 
-<h2>Actions and Observations</h2>
+<h2>Create your Azure Resources:</h2>
 
 <p align="center">
 <img src="https://github.com/simoneburch/net-protocols-traffic/assets/152559137/574576c7-3885-4d52-9fcf-a3dbf97b3bd0" alt="Resource examples"/>
@@ -52,6 +52,8 @@ Wireshark analyzes and filters network protocols. We'll use it with command-line
 - Open Wireshark and filter for ICMP traffic only to capture that ping activity we'll generate next.
 
 <br />
+
+<h2>Ping your Ubuntu VM from your Windows VM:</h2>
 
 <p>
 <img src="https://github.com/simoneburch/net-protocols-traffic/assets/152559137/138cad94-14ba-436b-87fd-f717aa07f94b" height="70%" width="70%" alt="Ping requests/replies"/>
@@ -90,11 +92,12 @@ Wireshark analyzes and filters network protocols. We'll use it with command-line
 
 <br />
 
+<h2>Observe the activity of other network protocols:</h2>
+
 <p>
 <img src="https://github.com/simoneburch/net-protocols-traffic/assets/152559137/ecf6b900-8669-4066-a24e-7a679e2bd349" height="80%" width="80%" alt="SSH traffic"/>
 </p>
-
-Let's observe the activity of other network protocols: 
+ 
 - Filter for SSH traffic back in Wireshark.
 - From the Windows VM remote into, or "SSH into", the Ubuntu VM using its private IP address.
 - You'll need to use the User and Password in the Linux SSH connection with the IP (ssh labuser@10.0.0.5).
@@ -133,6 +136,6 @@ DNS uses port 53 so you can also see that *udp.port == 53* was used to filter fo
 
 <br />
 
-**That's it for now - close your remote connection when you're finished. You should also delete your Resource Groups if you want to avoid being charged.**
+**That's it for now - close your remote connection when you're finished. You should also delete your Resource Groups if you want to avoid additional charges.**
 
 <p>:)</p>
